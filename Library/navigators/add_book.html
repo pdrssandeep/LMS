@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Library Management System</title>
+    <link rel="icon" href="/img/book.ico">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Library Management System</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://18.223.44.121:8083/goto_adminhome">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://18.223.44.121:8083/manage_users">Manage Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://18.223.44.121:8083/manage_books">Manage Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://18.223.44.121:8083/add_new_book">Add New Book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="http://18.223.44.121:8083/logout">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-7">
+            <div class="card text-center">
+            <div class="card-header success-color" style="color: black;">
+                Add New Book
+            </div>
+            <div class="card-body">
+              <form action="http://18.223.44.121:8083/add_book" method="post">
+                <div class="row">
+                  <div class="col-lg-6 form-group">
+                    <label>Book Name :</label>
+                    <input type="text" class="form-control" id="bname" placeholder="Enter Book Name" name="bname" required>
+                  </div>
+                  <div class="col-lg-6 form-group">
+                    <label>Author :</label>
+                    <input type="text" class="form-control" id="author" placeholder="Enter Author Name" name="author" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 form-group">
+                    <label>ISBN :</label>
+                    <input type="text" class="form-control" id="isbn" placeholder="Enter Book ISBN" name="isbn" required>
+                  </div>
+                  <div class="col-lg-6 form-group">
+                    <label>Date Published :</label>
+                    <input type="date" class="form-control" id="d_pub" name="d_pub" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-2"></div>
+                  <div class="col-lg-8 form-group">
+                    <label>Quantity :</label>
+                    <input type="number" class="form-control" id="qty" placeholder="Enter Quantity" name="qty" required>
+                  </div>
+                  <div class="col-lg-2"></div>
+                </div>
+                <div class="row"><br><br><br>
+                  <div class="col-lg-4"></div>
+                  <div class="col-lg-4">
+                    <button type="Submit" class="section-heading btn btn-default">ADD</button>
+                  </div>
+                  <div class="col-lg-4"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+  </body>
+
+</html> 
